@@ -1,0 +1,363 @@
+{
+  "timestamp": "2026-04-21T18:37:32.207327",
+  "test_level": "MAXIMUM",
+  "duration_config": 600,
+  "system": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_memory_gb": 23.99951171875,
+    "cpu_count": 28,
+    "ram_gb": 31.804637908935547
+  },
+  "results": [
+    {
+      "test_name": "System Info",
+      "status": "PASS",
+      "duration": 0.012054920196533203,
+      "score": null,
+      "details": "System Information:\n  cpu_physical: 20\n  cpu_logical: 28\n  cpu_freq_mhz: 2100.0\n  ram_gb: 31.804637908935547\n  platform: win32\n  python_version: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]\n  gpu_name: NVIDIA GeForce RTX 3090\n  gpu_memory_gb: 23.99951171875\n  gpu_multiprocessors: 82\n  gpu_compute_capability: 8.6\n  cuda_version: 12.4\n  pytorch_cuda: 90100\n  tensor_cores: True\n  power_limit_w: 480.0",
+      "error": null,
+      "metrics": {
+        "cpu_physical": 20,
+        "cpu_logical": 28,
+        "cpu_freq_mhz": 2100.0,
+        "ram_gb": 31.804637908935547,
+        "platform": "win32",
+        "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "gpu_name": "NVIDIA GeForce RTX 3090",
+        "gpu_memory_gb": 23.99951171875,
+        "gpu_multiprocessors": 82,
+        "gpu_compute_capability": "8.6",
+        "cuda_version": "12.4",
+        "pytorch_cuda": 90100,
+        "tensor_cores": true,
+        "power_limit_w": 480.0
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "CPU Stress",
+      "status": "PASS",
+      "duration": 600.2124021053314,
+      "score": 51.91162310326949,
+      "details": "CPU Stress completed in 600.2s\n  Total iterations: 31,158\n  Per-core avg: 1113",
+      "error": null,
+      "metrics": {},
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "Memory Stress",
+      "status": "PASS",
+      "duration": 5.525247573852539,
+      "score": null,
+      "details": null,
+      "error": null,
+      "metrics": {
+        "target_gb": 15.83492774963379,
+        "allocated_gb": 0.0
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "Disk I/O",
+      "status": "PASS",
+      "duration": 1.746438980102539,
+      "score": 2662.63542144042,
+      "details": "Write: 1990.9 MB/s\nRead: 3334.4 MB/s",
+      "error": null,
+      "metrics": {
+        "write_mbps": 1990.9044852244326,
+        "read_mbps": 3334.3663576564077
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "GPU Memory Bandwidth (STREAM)",
+      "status": "PASS",
+      "duration": 1.8331806659698486,
+      "score": 336.8603209873238,
+      "details": "STREAM TRIAD Bandwidth: 336.9 GB/s\n  Best size: 1024 MB\n  All results: ['335.3', '336.4', '336.1', '336.9'] GB/s",
+      "error": null,
+      "metrics": {
+        "best": {
+          "bandwidth_gbps": 336.8603209873238,
+          "size_mb": 1024,
+          "iterations": 50,
+          "test": "TRIAD"
+        },
+        "all_results": [
+          {
+            "bandwidth_gbps": 335.27609912070346,
+            "size_mb": 256,
+            "iterations": 50,
+            "test": "TRIAD"
+          },
+          {
+            "bandwidth_gbps": 336.40623763498587,
+            "size_mb": 512,
+            "iterations": 50,
+            "test": "TRIAD"
+          },
+          {
+            "bandwidth_gbps": 336.13689603042906,
+            "size_mb": 756,
+            "iterations": 50,
+            "test": "TRIAD"
+          },
+          {
+            "bandwidth_gbps": 336.8603209873238,
+            "size_mb": 1024,
+            "iterations": 50,
+            "test": "TRIAD"
+          }
+        ]
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "GPU Memory Pattern Test",
+      "status": "PASS",
+      "duration": 2.0933027267456055,
+      "score": null,
+      "details": "Patterns tested: 8\nMemory tested: 16.0 GB\nErrors found: 0",
+      "error": null,
+      "metrics": {
+        "total_memory_gb": 23.99951171875,
+        "tested_memory_gb": 16.0,
+        "patterns_tested": 8,
+        "errors_found": 0,
+        "individual_results": [
+          {
+            "pattern": "All zeros",
+            "success": true,
+            "errors": 0
+          },
+          {
+            "pattern": "All ones",
+            "success": true,
+            "errors": 0
+          },
+          {
+            "pattern": "Alternating 10",
+            "success": true,
+            "errors": 0
+          },
+          {
+            "pattern": "Alternating 01",
+            "success": true,
+            "errors": 0
+          },
+          {
+            "pattern": "Random pattern 1",
+            "success": true,
+            "errors": 0
+          },
+          {
+            "pattern": "Random pattern 2",
+            "success": true,
+            "errors": 0
+          },
+          {
+            "pattern": "Byte pattern",
+            "success": true,
+            "errors": 0
+          },
+          {
+            "pattern": "Inverted byte pattern",
+            "success": true,
+            "errors": 0
+          }
+        ]
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "GPU Maximum VRAM",
+      "status": "WARN",
+      "duration": 601.5994684696198,
+      "score": 93.7519073874387,
+      "details": "Total VRAM: 24.0 GB\nAllocated: 22.5 GB (93.8%)\nChunks: 45\nHeld for: 600s",
+      "error": null,
+      "metrics": {
+        "target_fraction": 0.95,
+        "target_bytes_gb": 22.799536132253706,
+        "total_bytes_gb": 23.99951171875,
+        "allocated_gb": 22.5,
+        "chunks_allocated": 45,
+        "errors": [],
+        "temperature_readings": []
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "GPU GEMM Stress (DCGM-style)",
+      "status": "PASS",
+      "duration": 600.3252913951874,
+      "score": 24030.07456059525,
+      "details": "Best GEMM performance: 24030.1 GFLOPS\nSize: 8192x8192\nTotal iterations: 47,018\nVariance: 10567.6 GFLOPS",
+      "error": null,
+      "metrics": {
+        "best": {
+          "iterations": 4368,
+          "elapsed_sec": 200.0040979385376,
+          "avg_gflops": 24030.07456059525,
+          "max_gflops": 25337.541994546387,
+          "min_gflops": 14769.967455265563,
+          "gflops_variance": 10567.574539280824,
+          "size": 8192,
+          "dtype": "torch.float32"
+        },
+        "all_results": [
+          {
+            "iterations": 32946,
+            "elapsed_sec": 200.0009000301361,
+            "avg_gflops": 22921.73654968167,
+            "max_gflops": 34362.22891651308,
+            "min_gflops": 3275.2707455706886,
+            "gflops_variance": 31086.95817094239,
+            "size": 4096,
+            "dtype": "torch.float32"
+          },
+          {
+            "iterations": 9704,
+            "elapsed_sec": 200.01752066612244,
+            "avg_gflops": 22532.934766563205,
+            "max_gflops": 25017.745817944044,
+            "min_gflops": 17410.51168743449,
+            "gflops_variance": 7607.234130509554,
+            "size": 6144,
+            "dtype": "torch.float32"
+          },
+          {
+            "iterations": 4368,
+            "elapsed_sec": 200.0040979385376,
+            "avg_gflops": 24030.07456059525,
+            "max_gflops": 25337.541994546387,
+            "min_gflops": 14769.967455265563,
+            "gflops_variance": 10567.574539280824,
+            "size": 8192,
+            "dtype": "torch.float32"
+          }
+        ]
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "GPU Tensor Core FP16",
+      "status": "PASS",
+      "duration": 600.0052971839905,
+      "score": 67.44001528026175,
+      "details": "TFLOPS: 67.44\nIterations: 36,802\nPrecision: FP16",
+      "error": null,
+      "metrics": {
+        "precision": "FP16",
+        "iterations": 36802,
+        "tflops": 67.44001528026175,
+        "duration": 600.0032289028168
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "GPU Tensor Core BF16",
+      "status": "PASS",
+      "duration": 600.0130393505096,
+      "score": 68.7254278712852,
+      "details": "TFLOPS: 68.73\nIterations: 37,504\nPrecision: BF16",
+      "error": null,
+      "metrics": {
+        "precision": "BF16",
+        "iterations": 37504,
+        "tflops": 68.7254278712852,
+        "duration": 600.0120387077332
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "ML Training Mixed Precision",
+      "status": "PASS",
+      "duration": 120.77510976791382,
+      "score": 17486.304020643456,
+      "details": "Best throughput: 17486 samples/sec\nBest batch size: 256\nMixed precision (AMP): True",
+      "error": null,
+      "metrics": {
+        "batch_results": [
+          {
+            "batch_size": 32,
+            "throughput": 2539.967616330568,
+            "iters": 2382,
+            "amp": true
+          },
+          {
+            "batch_size": 64,
+            "throughput": 4942.670654663066,
+            "iters": 2318,
+            "amp": true
+          },
+          {
+            "batch_size": 128,
+            "throughput": 9562.153032697028,
+            "iters": 2242,
+            "amp": true
+          },
+          {
+            "batch_size": 256,
+            "throughput": 17486.304020643456,
+            "iters": 2050,
+            "amp": true
+          }
+        ],
+        "amp_enabled": true
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "ML Large Batch OOM Test",
+      "status": "PASS",
+      "duration": 0.7199106216430664,
+      "score": 8192,
+      "details": "Maximum batch size: 8192\nNo OOM reached\nVRAM: 24.0 GB",
+      "error": null,
+      "metrics": {
+        "max_batch": 8192,
+        "oom_point": null
+      },
+      "warnings": [],
+      "thresholds": {}
+    },
+    {
+      "test_name": "Extended GPU Burn",
+      "status": "PASS",
+      "duration": 401.54772186279297,
+      "score": null,
+      "details": "GEMM iterations: 6,777\nMemory bandwidth: 335.7 GB/s\nMixed precision iters: 93,894",
+      "error": null,
+      "metrics": {
+        "gemm_iterations": 6777,
+        "bandwidth_gbps": 335.7099369022051,
+        "mixed_iterations": 93894
+      },
+      "warnings": [],
+      "thresholds": {}
+    }
+  ],
+  "summary": {
+    "total_tests": 13,
+    "passed": 12,
+    "warnings": 1,
+    "failed": 0,
+    "skipped": 0,
+    "errors": 0,
+    "total_duration_sec": 3536.4084656238556
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "timestamp": "2026-04-21T15:53:32.170392",
+  "system": {
+    "cpu_count": 28,
+    "ram_gb": 31.804637908935547,
+    "gpu_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_memory_gb": 23.99951171875
+  },
+  "results": [
+    {
+      "test_name": "System Info",
+      "status": "PASS",
+      "duration": 0.0,
+      "score": null,
+      "details": "System Information:\n  cpu_physical: 20\n  cpu_logical: 28\n  cpu_freq_mhz: 2100.0\n  ram_gb: 31.804637908935547\n  platform: win32\n  gpu_name: NVIDIA GeForce RTX 3090\n  gpu_memory_gb: 23.99951171875\n  gpu_multiprocessors: 82\n  cuda_version: 12.4\n  pytorch_cuda: 90100\n",
+      "error": null,
+      "metrics": {
+        "cpu_physical": 20,
+        "cpu_logical": 28,
+        "cpu_freq_mhz": 2100.0,
+        "ram_gb": 31.804637908935547,
+        "platform": "win32",
+        "gpu_name": "NVIDIA GeForce RTX 3090",
+        "gpu_memory_gb": 23.99951171875,
+        "gpu_multiprocessors": 82,
+        "cuda_version": "12.4",
+        "pytorch_cuda": 90100
+      }
+    },
+    {
+      "test_name": "CPU Stress",
+      "status": "PASS",
+      "duration": 120.45202088356018,
+      "score": 56.279670114901556,
+      "details": "CPU Stress completed in 120.5s\n  Total iterations: 6,779\n  CPU avg utilization: 86.7%\n  CPU max utilization: 100.0%",
+      "error": null,
+      "metrics": {
+        "cpu_avg_max": 100.0,
+        "cpu_avg_mean": 86.7004329004329,
+        "memory_max_percent": 39.6,
+        "memory_mean_percent": 39.24415584415584,
+        "gpu_max_temp": 52,
+        "gpu_avg_temp": 44.17748917748918,
+        "gpu_max_util": 33,
+        "gpu_avg_util": 4.818181818181818
+      }
+    },
+    {
+      "test_name": "Memory Stress",
+      "status": "PASS",
+      "duration": 4.9362473487854,
+      "score": null,
+      "details": "Memory stress completed\n  Target allocation: 15.5 GB\n  Memory max usage: 81.6%\n  Memory avg usage: 39.7%",
+      "error": null,
+      "metrics": {
+        "cpu_avg_max": 100.0,
+        "cpu_avg_mean": 84.60759493670886,
+        "memory_max_percent": 81.6,
+        "memory_mean_percent": 39.7409282700422,
+        "gpu_max_temp": 52,
+        "gpu_avg_temp": 44.12236286919831,
+        "gpu_max_util": 33,
+        "gpu_avg_util": 4.776371308016878
+      }
+    },
+    {
+      "test_name": "Disk I/O",
+      "status": "PASS",
+      "duration": 0.8578832149505615,
+      "score": 2693.280913894684,
+      "details": "Disk I/O completed\n  Write speed: 2029.9 MB/s\n  Read speed: 3356.6 MB/s\n  Test file size: 1024 MB",
+      "error": null,
+      "metrics": {
+        "write_speed_mbps": 2029.9438114836616,
+        "read_speed_mbps": 3356.618016305707,
+        "write_time": 0.5044474601745605,
+        "read_time": 0.3050689697265625
+      }
+    },
+    {
+      "test_name": "GPU Memory Bandwidth",
+      "status": "PASS",
+      "duration": 19.835049629211426,
+      "score": 20.70478542555888,
+      "details": "GPU Memory Bandwidth test completed\n  H2D copy time: 193.2 ms\n  GPU-GPU copy time: 15.3 ms\n  Estimated bandwidth: 20.7 GB/s\n  GPU max temp: 52",
+      "error": null,
+      "metrics": {
+        "bandwidth_gbps": 20.70478542555888,
+        "temp": 52
+      }
+    },
+    {
+      "test_name": "GPU Compute Stress",
+      "status": "PASS",
+      "duration": 120.41422772407532,
+      "score": 1689.8679319181142,
+      "details": "GPU Compute stress completed\n  Iterations: 370\n  Performance: 1689.9 GFLOPS\n  GPU max temp: 52\u00b0C\n  GPU avg util: 14.4%\n  GPU max util: 95%",
+      "error": null,
+      "metrics": {
+        "cpu_avg_max": 100.0,
+        "cpu_avg_mean": 40.12534113060428,
+        "memory_max_percent": 81.6,
+        "memory_mean_percent": 39.14230019493177,
+        "gpu_max_temp": 52,
+        "gpu_avg_temp": 44.83040935672515,
+        "gpu_max_util": 95,
+        "gpu_avg_util": 14.401559454191034
+      }
+    },
+    {
+      "test_name": "ML Training Simulation",
+      "status": "PASS",
+      "duration": 22.168428421020508,
+      "score": 31175.30250636022,
+      "details": "ML Training simulation completed\n  Best batch size: 256\n  Max throughput: 31175 samples/sec\n  GPU max temp: 54\u00b0C\n  Tested batch sizes: [32, 64, 128, 256]",
+      "error": null,
+      "metrics": {
+        "batch_results": [
+          {
+            "batch_size": 32,
+            "throughput": 4614.307293936386,
+            "avg_loss": 1.013203348780929,
+            "batches": 1563,
+            "time": 10.835862636566162
+          },
+          {
+            "batch_size": 64,
+            "throughput": 9488.397530788456,
+            "avg_loss": 0.9998248701967547,
+            "batches": 782,
+            "time": 5.269593715667725
+          },
+          {
+            "batch_size": 128,
+            "throughput": 17960.97962377344,
+            "avg_loss": 0.9966746457397481,
+            "batches": 391,
+            "time": 2.7838125228881836
+          },
+          {
+            "batch_size": 256,
+            "throughput": 31175.30250636022,
+            "avg_loss": 0.9838808814481813,
+            "batches": 196,
+            "time": 1.6038336753845215
+          }
+        ],
+        "monitoring": {
+          "cpu_avg_max": 100.0,
+          "cpu_avg_mean": 38.524299065420564,
+          "memory_max_percent": 81.6,
+          "memory_mean_percent": 39.175887850467284,
+          "gpu_max_temp": 54,
+          "gpu_avg_temp": 45.09906542056075,
+          "gpu_max_util": 95,
+          "gpu_avg_util": 16.930841121495327
+        }
+      }
+    },
+    {
+      "test_name": "Mixed Workload",
+      "status": "PASS",
+      "duration": 120.67850494384766,
+      "score": 326.081268725613,
+      "details": "Mixed workload test completed\n  Duration: 120.7s\n  CPU max: 100.0%\n  Memory max: 81.6%\n  GPU max temp: 67\u00b0C\n  GPU max util: 97%",
+      "error": null,
+      "metrics": {
+        "cpu_avg_max": 100.0,
+        "cpu_avg_mean": 27.09261658031088,
+        "memory_max_percent": 81.6,
+        "memory_mean_percent": 40.321632124352334,
+        "gpu_max_temp": 67,
+        "gpu_avg_temp": 50.5220207253886,
+        "gpu_max_util": 97,
+        "gpu_avg_util": 32.6839378238342
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 8,
+    "passed": 8,
+    "skipped": 0,
+    "errors": 0,
+    "total_duration": 409.34236216545105
+  }
+}
